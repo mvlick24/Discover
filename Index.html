@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>𝒟𝐼𝒮𝒞𝒪𝒱𝐸𝑅</title>
+    <link rel="stylesheet" href="Style projet.css">
+
+
+</head>
+
+<body>
+    <div class="po">
+        <div id="container">
+            <div>
+                <strong>𝒟𝐼𝒮𝒞𝒪𝒱𝐸𝑅</strong>
+            </div>
+            <div class="list">
+                <ul>
+                    <a href="file:///C:/Users/hp/Downloads/PROJET%204K/SITES/MALDIVES.html" target="_blank"
+                        rel="noopener noreferrer">
+                        <li>𝑀𝒜𝐿𝒟𝐼𝒱𝐸𝒮</li>
+                    </a>
+                    <a href="file:///C:/Users/hp/Downloads/PROJET%204K/SITES/TOKYO.html" target="_blank"
+                        rel="noopener noreferrer">
+                        <li class="none">𝒯𝒪𝒦𝒴𝒪</li>
+                    </a>
+
+                    <a href="file:///C:/Users/hp/Downloads/PROJET%204K/SITES/SAINTORIN.html" target="_blank"
+                        rel="noopener noreferrer">
+                        <li>𝒮𝒜𝒩𝒯𝒪𝑅𝐼𝒩</li>
+                    </a>
+
+                    <a href="file:///C:/Users/hp/Downloads/PROJET%204K/SITES/MADRID.html" target="_blank"
+                        rel="noopener noreferrer">
+                        <li class="none">𝑀𝒜𝒟𝑅𝐼𝒟</li>
+                    </a>
+
+                    <a href="file:///C:/Users/hp/Downloads/PROJET%204K/SITES/STUTTG.html" target="_blank"
+                        rel="noopener noreferrer">
+                        <li>𝒮𝒯𝒰𝒯𝒯𝒢𝒜𝑅𝒯</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="no">
+                <a href="file:///C:/Users/hp/Downloads/PROJET%204K/SITES/CONTACT.html" target="_blank"
+                    rel="noopener noreferrer"><button class="bouu">S'inscrire</button>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <div class="text">
+            <div class="slide-container">
+                <div class="slide visible" id="slide1">
+                    <h1>Prêt à partir à l'aventure ?</h1>
+                    <p>Plongez dans une aventure sans limites avec <span>DISCOVER</span>, votre compagnon de voyage
+                        ultime. <br> Que vous soyez un explorateur passionné, un voyageur intrépide ou simplement à la
+                        recherche de nouvelles expériences, notre plateforme vous ouvre les portes vers des destinations
+                        extraordinaires à travers le globe.</p>
+
+                </div>
+                <div class="slide" id="slide2">
+                    <h1>Une aventure à chaque clic !</h1>
+                    <p>Du sommet des montagnes majestueuses aux plages de sable fin baignées par les eaux cristallines,
+                        notre site regorge de trésors cachés et d'expériences uniques qui vous laisseront des souvenirs
+                        inoubliables. Parcourez nos guides de voyage détaillés, découvrez des conseils d'initiés et
+                        laissez-vous inspirer par des récits de voyage captivants!</p>
+
+                </div>
+                <div class="slide" id="slide3">
+                    <h1>Explorez, découvrez, vivez !</h1>
+                    <p>Que vous souhaitiez partir à l'aventure en solo, en famille ou entre amis, <span>DISCOVER</span>
+                        vous accompagne à chaque étape de votre voyage.N'attendez plus pour vivre l'aventure de votre
+                        vie. Laissez-vous séduire par l'appel de l'inconnu et partez à la découverte de destinations
+                        extraordinaires. Votre prochaine aventure commence ici !</p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('visible');
+                if (i === index) {
+                    slide.classList.add('visible');
+                }
+            });
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            const nextIndex = (currentSlide + 1) % slides.length;
+            showSlide(nextIndex);
+        }
+
+        function prevSlide() {
+            const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(prevIndex);
+        }
+
+        showSlide(currentSlide);
+
+        setInterval(() => {
+            nextSlide();
+        }, 6000);
+
+        document.querySelector('.prev').addEventListener('click', prevSlide);
+        document.querySelector('.next').addEventListener('click', nextSlide);
+    </script>
+
+    <div class="lepp">
+        <div class="container">
+            <div class="image-container">
+                <img class="image" src="ligne1.jpeg" alt="Exemple d'image">
+            </div>
+            <div class="omg">
+                <h2 class="title">𝕄𝕒𝕕𝕣𝕚𝕕 : 𝕃𝕒 𝕔𝕒𝕡𝕚𝕥𝕒𝕝𝕖 𝕖𝕤𝕡𝕒𝕘𝕟𝕠𝕝𝕖 !</h2>
+                <p>Explorez l'élégance intemporelle du magnifique hôtel de luxe situé au cœur de Madrid. Avec une
+                    fusion harmonieuse de design contemporain et de charme classique, notre établissement incarne le
+                    raffinement et le confort absolu. Dès que vous franchirez nos portes, vous serez accueilli par un
+                    service impeccable et une atmosphère chaleureuse.</p>
+                <div class="but">
+                    <a href="file:///C:/Users/hp/Downloads/PROJET%204K/SITES/MADRID.html" target="_blank"
+                        rel="noopener noreferrer"><button class="botton">Explorer</button></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="image-containera">
+            <img class="image" src="g.webp" alt="Exemple d'image">
+        </div>
+        <div class="omp">
+            <h2 class="title">𝕊𝕒𝕟𝕥𝕠𝕣𝕚𝕟 : 𝕃'î𝕝𝕖 𝕕𝕖𝕤 𝕣ê𝕧𝕖𝕤 é𝕧𝕖𝕚𝕝𝕝é𝕤 𝕧𝕠𝕦𝕤 𝕒𝕥𝕥𝕖𝕟𝕕!</h2>
+            <p>Perdez-vous dans les ruelles étroites et sinueuses de Thira, la capitale de l'île, où les maisons
+                blanchies à la chaux et les dômes bleus des églises créent une toile de fond pittoresque. Explorez les
+                villages traditionnels de Oia, Fira et Imerovigli, perchés au sommet des falaises volcaniques, et
+                laissez-vous séduire par leurs vues à couper le souffle sur la caldeira et la mer scintillante.</p>
+            <div class="but">
+                <a href="file:///C:/Users/hp/Downloads/PROJET%204K/SITES/SAINTORIN.html" target="_blank"
+                    rel="noopener noreferrer"><button class="botton">Découvrir</button></a>
+            </div>
+        </div>
+
+
+        <div class="containerr">
+            <div class="image-container">
+                <img class="image" src="t.jpg" alt="Exemple d'image">
+            </div>
+            <div class="poo">
+                <h2 class="title">𝕋𝕆𝕂𝕐𝕆 : 𝔻é𝕔𝕠𝕦𝕧𝕣𝕖𝕫 𝕝𝕒 𝕞é𝕥𝕣𝕠𝕡𝕠𝕝𝕖 𝕧𝕚𝕓𝕣𝕒𝕟𝕥𝕖 𝕕𝕦
+                    𝕁𝕒𝕡𝕠𝕟!</h2>
+                <p>Plongez dans l'animation électrique de Shibuya, où les passages piétons se transforment en un
+                    spectacle
+                    multicolore dès la tombée de la nuit. Explorez les quartiers branchés de Harajuku et Shinjuku, où la
+                    mode excentrique et les gratte-ciels illuminés créent une atmosphère futuriste à couper le souffle.
+                </p>
+                <div class="but">
+                    <a href="file:///C:/Users/hp/Downloads/PROJET%204K/SITES/TOKYO.html" target="_blank"
+                        rel="noopener noreferrer"><button class="botton">Explorer</button></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="image-containera">
+            <img class="image" src="M.jpg" alt="Exemple d'image">
+        </div>
+        <div class="omp">
+            <h2 class="title">𝕄𝕒𝕝𝕕𝕚𝕧𝕖𝕤 : 𝕍𝕚𝕧𝕖𝕫 𝕦𝕟 𝕣ê𝕧𝕖 𝕥𝕣𝕠𝕡𝕚𝕔𝕒𝕝!</h2>
+            <p>Laissez-vous choyer dans les resorts de luxe des Maldives, où les villas privées sur pilotis vous offrent
+                une
+                vue imprenable sur l'océan et où les spas vous promettent une détente totale dans un cadre idyllique.
+                Dégustez une cuisine raffinée aux saveurs exotiques, préparée avec des produits locaux frais et des
+                fruits
+                de mer délicieux.</p>
+            <div class="but">
+                <a href="file:///C:/Users/hp/Downloads/PROJET%204K/SITES/MALDIVES.html" target="_blank" rel=""><button
+                        class="botton">Découvrir</button></a>
+            </div>
+        </div>
+        <div class="containerr">
+            <div class="image-container">
+                <img class="image" src="ent2.jpeg" alt="Exemple d'image">
+            </div>
+            <div class="poo">
+                <h2 class="title">𝕊𝕥𝕦𝕥𝕥𝕘𝕒𝕣𝕥 : 𝔼𝕩𝕡𝕝𝕠𝕣𝕖𝕫 𝕝𝕖 ℂœ𝕦𝕣 ℂ𝕦𝕝𝕥𝕦𝕣𝕖𝕝 𝕕𝕖
+                    𝕝'𝔸𝕝𝕝𝕖𝕞𝕒𝕘𝕟𝕖!
+                </h2>
+                <p>
+                    Bienvenue dans l'élégance sophistiquée de notre luxueux hôtel situé au cœur de Stuttgart, où le
+                    charme traditionnel rencontre le confort moderne. Dès votre arrivée, vous serez accueilli par notre
+                    équipe chaleureuse et professionnelle, prête à rendre votre séjour inoubliable.</p>
+                <div class="but">
+                    <a href="file:///C:/Users/hp/Downloads/PROJET%204K/SITES/STUTTG.html" target="_blank"
+                        rel="noopener noreferrer"><button class="botton">Explorer</button></a>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer">
+            <ul class="op">
+                <caption>
+                    <h3><u>À propos</u></h3>
+                </caption>
+                <li class="ll">Politique de confidentialites</li>
+                <li class="ll">Conditions d'utilisations</li>
+                <li class="ll">SAV</li>
+            </ul>
+            <ul class="op">
+                <caption>
+                    <h3><u>Contact</u></h3>
+                </caption>
+                <li class="ll">Dakar,Senegal PA 0000</li>
+                <li class="ll">Tel:+221762316100</li>
+                <li class="ll">discoverhelp@gmail.com</li>
+            </ul>
+
+            <br>
+            <h4 class="h">𝒟𝐼𝒮𝒞𝒪𝒱𝐸𝑅 : Votre passeport vers l'aventure</h4>
+
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
